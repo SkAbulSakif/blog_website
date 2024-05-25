@@ -1,0 +1,44 @@
+.hero-section {
+    height: 40vh; /* 60% of viewport height */
+    background-color: navy;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(255, 221, 0);
+    font-family: 'Times New Roman', Times, serif;
+    margin: 20px 10px;
+  }
+  
+  .content {
+    text-align: center;
+    margin: 10px 0px;
+    padding: 10px 0px;
+    border: none;
+  }
+  
+  .main-text {
+    margin-top: 10px; /* Add margin to separate main text from subtext */
+    display: inline-block; /* Ensure animation displays inline */
+    color: rgb(255, 204, 0);
+  }
+
+  .sub-text{
+    margin-top: 10px; /* Add margin to separate main text from subtext */
+    display: inline-block; /* Ensure animation displays inline */
+    color: rgb(255, 204, 0);
+  }
+  
+ 
+  /* Media queries for responsiveness */
+  @media screen and (max-width: 565px) {
+    .hero-section {
+      height: 20vh; /* Adjusted height for smaller screens */
+    }
+  }
+  
+  @media screen and (max-width: 576px) {
+    .hero-section {
+      height: 30vh; /* Further adjusted height for smaller screens */
+    }
+  }
+  

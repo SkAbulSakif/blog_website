@@ -1,0 +1,196 @@
+
+   .main-container{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff; /* Optional: sets background color */
+    margin-top: 50px;
+   }
+
+  .login-container {
+    width: 30vw;
+    display: flex;
+    flex-direction: column;
+    height: 70vh; /* Adjust height as needed */
+    max-width: 80vw; /* Ensure it doesn't get too wide on large screens */
+    padding: 20px;
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.2); /* Optional: adds a shadow for better visual appeal */
+    background-color: #fefeff; /* Optional: sets background color */
+    border-radius: 8px; /* Optional: rounded corners */
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .upper-part {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 30%;
+    padding: 0 20px;
+    width: 100%;
+    background-color: #6fd172;
+    box-shadow: 0 4px 6px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .logo {
+    height: 80%;
+    width: 30%; /* 30% of the upper-part */
+  }
+  
+  .logo img {
+    height: 100%;
+    width: 100%; /* Ensure image covers the logo container */
+    border: 2px solid black;
+    border-radius: 50%;
+  }
+  
+  .title {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    font-size: 24px; /* Adjust as needed */
+    margin-left: 20px; /* Space between logo and text */
+    flex: 1; /* Take remaining space */
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  
+  .middle-part {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 60%;
+    width: 100%;
+    padding: 20px 0; /* Padding to maintain gap from upper and lower parts */
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+    width: 90%; /* Input fields will have 90% width */
+  }
+
+  .forrm{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .form-control {
+    width: 100%;
+  }
+  
+  .log-button{
+    width: 40%; /* Login button will have 40% width of middle part */
+    margin: 10px 0; /* Margin to center it vertically within the middle part */
+    background-color: rgb(23, 0, 174);
+    height: 70%;
+    border: 2px solid black;
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+  }
+  
+  .lower-part {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 20%;
+    width: 100%;
+    padding: 0 20px;
+    border-top: 1px solid #ccc;
+  }
+  
+  /* .lower-part p {
+    margin-bottom: 10px;
+  } */
+  
+  .back-button {
+    margin-top: 10px;
+    background-color: rgb(29, 42, 222);
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fefeff;
+    height: 40%;
+    border: 2px solid black;
+    border-radius: 6px;
+    text-decoration: none
+  }
+  
+  .log-button:hover{
+    width: 40%; /* Login button will have 40% width of middle part */
+   
+    background-color: rgb(96, 227, 133);
+    color: black;
+  }
+
+  .back-button:hover{
+    width: 40%; /* Login button will have 40% width of middle part */
+    background-color: rgb(96, 227, 133);
+    color: black;
+  }
+
+  #lower-text{
+    color: red;
+  }
+
+  @media (max-width: 992px) {
+    .main-container {
+      margin-top: 0;
+    }
+  
+    .login-container {
+      width: 100vw; /* Change to 100vw to take up full width */
+      height: 100vh; /* Change to 100vh to take up full height */
+      max-width: none; /* Remove max-width restriction */
+      border: 2px solid black;
+      border-radius: 0; /* Remove rounded corners */
+      box-shadow: none; /* Remove shadow */
+    }
+  
+    .upper-part, .middle-part, .lower-part {
+      height: auto;
+      padding: 10px 20px;
+      
+    }
+  
+    .upper-part {
+      height: 20vh;
+      flex-direction: column;
+      align-items: center;
+      border: 2px solid black;
+    }
+  
+    .logo {
+      width: 30%; /* Full width for mobile */
+      height: 60%; /* Adjust height */
+    }
+  
+    .title {
+      margin-left: 0; /* Remove margin */
+      margin-top: 10px; /* Add top margin */
+      font-size: 18px; /* Adjust font size */
+    }
+  
+    .middle-part .form-group {
+      width: 100%;  /* Full width for mobile */
+      height: 60%;
+      margin: 20px 5px;
+    }
+  
+    .log-button, .back-button {
+      width: 80%; /* Wider buttons for mobile */
+    }
+  }

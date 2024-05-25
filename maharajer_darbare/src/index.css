@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+pre {
+    border-radius: 8px;
+    color: rgb(183, 255, 255) !important;
+    overflow-x: auto; /* Changed overflow-x to auto for responsiveness */
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+/* Responsive breakpoints */
+@media (min-width: 640px) {
+    pre {
+        scroll-padding-top: 20px; /* Apply scroll-padding-top only for screens larger than 640px */
+    }
+}
+

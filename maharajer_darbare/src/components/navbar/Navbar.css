@@ -1,0 +1,138 @@
+/* Navbar.css */
+
+/* General Styles */
+.nav-bg {
+  background-color: #fffbaf;
+  padding: 10px 20px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2 );
+}
+
+.nav-brand {
+  display: flex;
+  align-items: center;
+}
+
+.nav-brand img.logo {
+  height: 50px; /* Adjust as necessary */
+}
+
+.nav-text {
+  font-size: 1.5rem;
+  /* font-weight: bold; */
+  font-family: sans-serif;
+  margin-left: 10px;
+}
+
+/* Centering Navbar Items */
+.navbar-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+}
+
+.hamburger-menu-items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+#navbarScroll{
+  width: auto;
+}
+
+/* Navbar Links */
+.nav-link {
+  margin: 0 15px;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+/* Search Form Styles */
+.search-form {
+ 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-control {
+  width: 100%; /* Adjust as necessary */
+  height: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-button {
+  margin-left: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(27, 27, 255);
+  color: black;
+}
+
+.nav-mid{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Responsive Styles */
+@media (max-width: 992px) {
+  .nav-text {
+    display: none;
+  }
+  
+  .nav-mid {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .hamburger-menu {
+    font-size: 1.5rem;
+    cursor: pointer;
+    margin-left: 20px;
+  }
+
+  .navbar-menu {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar-menu.active {
+    display: flex;
+  }
+
+  .hamburger-menu-items {
+    display: none;
+  }
+
+  .navbar-menu.active .hamburger-menu-items {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.search-button {
+  margin-left: 10px;
+  background-color: rgb(1, 72, 139);
+  height: 2rem;
+  color: #fff;
+}
+
+/* Logo Styles */
+@media (max-width: 576px) {
+  .nav-brand img.logo {
+    height: 40px; /* Adjust as necessary */
+    width: 60%;
+  }
+  .nav-text{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 8px;
+    color: rgb(6, 13, 104);
+  } 
+}
